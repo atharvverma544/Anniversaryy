@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Anniversary</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('your-image-url.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #e6007e;
+        }
+
+        .timeline, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .timeline-item, .gallery-item {
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item h3, .gallery-item h3 {
+            color: #e6007e;
+        }
+
+        .timeline-item p, .gallery-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .love-letter {
+            background-color: #ffe6f2;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+
+        .countdown {
+            text-align: center;
+            font-size: 2em;
+            color: #e6007e;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Happy Anniversary, Aditreee!</h1>
+    </header>
+
+    <div class="content">
+
+        <!-- Countdown Section -->
+        <div class="countdown">
+            <p>Countdown to Our Special Day: <span id="countdown"></span></p>
+        </div>
+
+        <!-- Our Story Section -->
+        <section>
+            <h2 class="section-title">Our Story</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>First Date</h3>
+                    <p>We met on 5th August and had our first date at Movie 😂😂💗 That was such a wonderful day 😭😭🤙🏻 Thank you for making that day unforgettable I didn’t just meet you I met someone who makes my life brighter, one moment at a time 😘😘.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Our First Hug</h3>
+                    <p>We hugged in such a cute way like omgg 😭😭🥰 That moment will always be saved in my heart princess 🥹🥹</p>
+                </div>
+                
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section>
+            <h2 class="section-title">Memories</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="C:\Users\Atharv Verma\Downloads\Phone Link\2025-10-07_23-30-40_427.jpg" alt="Memory 1">
+                    <p>Thank youuu sooo much for this pic 🥹💗</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\Atharv Verma\Downloads\Phone Link\2025-10-07_23-30-40_412.jpg" alt="Memory 2">
+                    <p>Another one 🍻🤙🏻</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\Atharv Verma\Downloads\Phone Link\2025-10-07_23-30-40_453.jpg" alt="Memory 3">
+                    <p>🤭💗</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section>
+            <h2 class="section-title">A Special Message</h2>
+            <div class="love-letter">
+                <p>My Dearest Aditree,</p>
+                <p>
+                    I want to take this moment to remind you of just how much you mean to me. Every day with you feels
+                    like a gift, and I am so grateful for all of the memories we have created together. You make my world
+                    brighter and fill my heart with love.
+                </p>
+                <p>
+                    Thank you for being my partner, my best friend, and the love of my life. I can't wait to make more
+                    memories with you. Happyy 5 months Anniversaryy Baby 😘😘😘
+                </p>
+                <p>With all my love,</p>
+                <p>Atharv</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by Atharv | © 2025</p>
+    </footer>
+
+    <script>
+        // Countdown function
+        const countDownDate = new Date("2025-10-10T00:00:00").getTime();
+
+        const countdownElement = document.getElementById("countdown");
+
+        const interval = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                countdownElement.innerHTML = "The special day has arrived!";
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
